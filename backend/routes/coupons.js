@@ -37,3 +37,6 @@ router.post('/apply', async (req, res) => {
     res.status(500).json({ message: 'Error applying coupon', error });
   }
 });
+
+
+module.exports = router;

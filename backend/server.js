@@ -7,11 +7,13 @@ const authRoutes = require('./routes/auth');
 const productRoutes = require('./routes/products');
 const cartRoutes = require('./routes/cart');
 const orderRoutes = require('./routes/orders');
-const adminRoutes = require('./routes/admin');
+const adminRoutes = require('./routes/admin').default || require('./routes/admin'); 
 const couponRoutes = require('./routes/coupons');
 const paymentRoutes = require('./routes/payment');
 
 dotenv.config();
+console.log("Admin Routes Type:", typeof adminRoutes);
+console.log("Admin Routes Content:", adminRoutes);
 
 const app = express();
 app.use(express.json());
