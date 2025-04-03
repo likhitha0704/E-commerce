@@ -1,6 +1,6 @@
 
 
-
+const mongoose = require('mongoose'); // ✅ Import mongoose
 
 // routes/cart.js
 const express = require('express');

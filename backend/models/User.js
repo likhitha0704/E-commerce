@@ -1,7 +1,6 @@
 
 // models/User.js
-const mongoose = require('mongoose');
-
+const mongoose = require('mongoose'); // ✅ Import mongoose
 const UserSchema = new mongoose.Schema({
   name: { type: String, required: true },
   address: { type: String, required: true },
